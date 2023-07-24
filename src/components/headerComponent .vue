@@ -65,7 +65,6 @@ export default {
 }
 /*barra in position fix */
 .fix-bar{
-    position: fixed;
     display: flex;
     padding: 30px 15%;
     
@@ -125,6 +124,7 @@ export default {
         font-weight: bold;
         font-weight: 900;
         margin-bottom:10px ;
+    
     }
     button:hover{
         background-color: white;
@@ -138,7 +138,7 @@ export default {
 .jumbotron{
     background-image: url(../assets/img/homepage-hero-background.jpg);
     height: 800px;
-    width: 100%;
+    max-width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -147,6 +147,7 @@ export default {
         color: white;
         top: 45%;
         left: 20%;
+        width: 800px;
         h1{
             font-size: 80px;
             padding: 0;
@@ -169,20 +170,20 @@ export default {
     border-radius: 10px;
     div{
         height: 60%;
-        font-size: 2rem;
+        font-size: 1.8rem;
         padding: 3px;
     }
     h4{
         margin: 0;
-        color: #6f7172;
+        color: gr;
     }
     .sale{
         color:#7ABC64 ;
-        font-weight: bold;
         span{
         font-size: 1.0rem;
         position: relative;
-        top: -10px;}
+        top: -10px;
+        }
     }
 
 }
