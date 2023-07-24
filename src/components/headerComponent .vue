@@ -32,7 +32,20 @@ export default {
             <li><a href="">BLOG</a></li>
         </ul>
         <button type="button">BOOK NOW</button>
-
+    </div>
+    <div class="jumbotron">
+        <div class="title">
+            <h1>Drive with Avada</h1>
+            <h5>We offer the finest driving tuition money can buy</h5>
+        </div>
+    </div>
+    <div class="interactive-icon">
+        <div><i class="fa-brands fa-algolia"></i></div>
+        <h4>Demos</h4>
+    </div>
+    <div class="interactive-icon2">
+        <div class="sale"><span >$</span>39</div>
+        <h4>On sale</h4>
     </div>
 </div>
 </template>
@@ -57,7 +70,7 @@ export default {
     padding: 30px 15%;
     
     width: 70%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
     color: white;
     align-items: center;
     
@@ -122,4 +135,64 @@ export default {
     }
 }
 /*jumbotron*/
+.jumbotron{
+    background-image: url(../assets/img/homepage-hero-background.jpg);
+    height: 800px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .title{
+        position: relative;
+        color: white;
+        top: 45%;
+        left: 20%;
+        h1{
+            font-size: 80px;
+            padding: 0;
+            margin: 0;
+        }
+        h5{
+            font-size: 30px;
+            padding: 0;
+            margin: 0;
+            font-weight: lighter;
+        }
+    }
+}
+.interactive-icon, .interactive-icon2{
+    position: fixed;
+    background-color: white;
+    height: 65px;
+    width: 65px;
+    text-align: center;
+    border-radius: 10px;
+    div{
+        height: 60%;
+        font-size: 2rem;
+        padding: 3px;
+    }
+    h4{
+        margin: 0;
+        color: #6f7172;
+    }
+    .sale{
+        color:#7ABC64 ;
+        font-weight: bold;
+        span{
+        font-size: 1.0rem;
+        position: relative;
+        top: -10px;}
+    }
+
+}
+.interactive-icon{
+    right: 20px;
+    top: 160px;
+}
+.interactive-icon2{
+    right: 20px;
+    top: 260px;
+}
+
 </style>
