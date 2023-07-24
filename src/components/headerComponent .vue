@@ -52,6 +52,7 @@ export default {
 
 <style lang="scss" scoped>
 .black-bar{
+    position: fixed;
     display: flex;
     justify-content: space-between;
     width: 70%;
@@ -65,11 +66,12 @@ export default {
 }
 /*barra in position fix */
 .fix-bar{
+    position: fixed;
     display: flex;
     padding: 30px 15%;
-    
+    margin-top: 50px;
     width: 70%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.4);
     color: white;
     align-items: center;
     
@@ -121,8 +123,6 @@ export default {
         color: white;
         border: transparent;
         margin-left: 50px;
-        font-weight: bold;
-        font-weight: 900;
         margin-bottom:10px ;
     
     }
