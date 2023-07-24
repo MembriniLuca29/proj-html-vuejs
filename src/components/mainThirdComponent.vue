@@ -2,7 +2,6 @@
 import { store } from '../store.js';
 
 export default {
-    name:"headerComponent",
   data() {
     return {
       store
@@ -13,9 +12,7 @@ export default {
 </script>
 
 <template>
-<div class="header-container">
 
-</div>
 </template>
 
 <style lang="scss" scoped>
