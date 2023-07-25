@@ -23,6 +23,7 @@ export default {
 <template>
  <headerComponent/>
  <mainComponent/>
+ <footerComponent/>
   
 </template>
 

@@ -319,7 +319,7 @@ export default {
 .instructor-container{
   text-align: center;
   width: 100%;
-  margin: 100px auto;
+  margin: 100px auto -100px auto;
   h3{
     font-size: 3rem;
   }

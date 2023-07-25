@@ -106,8 +106,6 @@ export default {
 <style lang="scss" scoped>
 .third-container{
   width: 100%;
-  position: relative;
-  top: -200px;
   margin: 0 auto;
   z-index: 0;
   .testimonials-background-container{
