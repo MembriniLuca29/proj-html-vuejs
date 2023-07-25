@@ -24,10 +24,10 @@ export default {
     <h3 class="text-green">First Lesson Free!</h3>
     <p>When you make a block booking whit us your first  lesson is included free.</p>
     <form action="">
-      <input type="text" placeholder="Your name*" class="input-icon">
-      <input type="mail" placeholder="Email*">
-      <input type="number" placeholder="Telephone">
-      <input type="text" placeholder="Location">
+      <input type="text" placeholder="Your name*" class="input-icon" required>
+      <input type="email" id="email" name="email" placeholder="Email*" required>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="Telephone">
+      <input type="text" placeholder="Location" required>
       <button type="submit"> REQUEST A CALLBACK</button>
     </form>
   </div>

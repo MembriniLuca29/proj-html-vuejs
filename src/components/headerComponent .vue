@@ -59,6 +59,7 @@ export default {
     background-color: #353637;
     padding: 0 15%;
     color: rgb(168, 165, 165);
+    z-index: 2;
     span:hover{
         text-decoration: underline;
         cursor: pointer;
@@ -66,6 +67,7 @@ export default {
 }
 /*barra in position fix */
 .fix-bar{
+    z-index: 2;
     position: fixed;
     display: flex;
     padding: 30px 15%;
@@ -168,6 +170,7 @@ export default {
     width: 65px;
     text-align: center;
     border-radius: 10px;
+    z-index: 2;
     div{
         height: 60%;
         font-size: 1.8rem;
@@ -185,7 +188,7 @@ export default {
         top: -10px;
         }
     }
-
+   
 }
 .interactive-icon{
     right: 20px;
@@ -195,5 +198,9 @@ export default {
     right: 20px;
     top: 260px;
 }
-
+.interactive-icon:hover,.interactive-icon2:hover{
+        cursor: pointer;
+        color: white;
+        background-color: black;
+    }
 </style>
