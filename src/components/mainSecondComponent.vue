@@ -362,6 +362,7 @@ export default {
     padding: 20px 25px 30px 25px ;
     background-color: white;
     box-shadow: 0px 15px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
 
     div {
       text-align: center;

@@ -5,7 +5,7 @@ import mainThirdComponent from './mainThirdComponent.vue';
 import { store } from '../store.js';
 
 export default {
-  name: "main",
+  name: "mainsection",
   components: {
     mainFirstComponent,
     mainSecondoComponent,
@@ -13,7 +13,7 @@ export default {
   },
   data() {
     return {
-      store
+      store,
     };
   },
 };

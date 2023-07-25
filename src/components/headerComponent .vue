@@ -170,7 +170,7 @@ export default {
     width: 65px;
     text-align: center;
     border-radius: 10px;
-    z-index: 2;
+    z-index: 5;
     div{
         height: 60%;
         font-size: 1.8rem;
