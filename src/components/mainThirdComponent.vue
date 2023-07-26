@@ -5,33 +5,29 @@ export default {
   data() {
     return {
       store,
-      baseUrl: './assets/img/',
-
-      testimonials :[
+      baseUrl: './img/',
+      testimonials: [
         {
-          "name":'Sophia Jones' ,
-          "image":'courses-instructor-200x200.jpg',
+          "name": 'Sophia Jones',
+          "image": 'courses-instructor-200x200.jpg',
         },
-
         {
-          "name":'grant' ,
-          "image":'testimonial-grant.png' ,
+          "name": 'grant',
+          "image": 'testimonial-grant.png',
         },
-   
         {
           "name": 'harold',
           "image": 'testimonial-harold.png',
         },
-     
         {
           "name": 'kate',
           "image": 'testimonial-kate.png',
         },
-       {
+        {
           "name": 'kelly',
           "image": 'testimonial-kelly.png',
         },
-        ],
+      ],
       selectedTestimonial: null,
       selectedTestimonialIndex: null,
     };
@@ -41,8 +37,6 @@ export default {
       this.selectedTestimonial = this.testimonials[index];
       this.selectedTestimonialIndex = index;
     },
-    
- 
   },
   mounted() {
     // Set the initial selected testimonial to Sophia (index 0)
@@ -53,8 +47,8 @@ export default {
 </script>
 
 <template>
- <div class="third-container">
-  <div class="testimonials-background-container">
+  <div class="third-container">
+    <div class="testimonials-background-container">
       <div class="testimonials-container">
         <h3>Tesrimonials</h3>
         <p>Here's what our happy drivers had to say about our services:</p>
@@ -64,12 +58,13 @@ export default {
           :alt="selectedTestimonial.name"
         />
         <!-- :src="`${baseUrl}${selectedTestimonial.image}`" -->
-        <p>Avada Driving School really helped build my confidence behind the wheel and driving in general, and they got me a first time pass! <br>
-        Highly recommended.</p>
+        <p>
+          Avada Driving School really helped build my confidence behind the wheel and driving in general, and they got me a first time pass! <br>
+          Highly recommended.
+        </p>
         <h5 v-if="selectedTestimonial">{{ selectedTestimonial.name }}</h5>
         <div class="button-carousel">
           <button v-for="(testimonial, index) in testimonials" :key="index" @click="changeTestimonial(index)"></button>
-        
         </div>
       </div>
     </div>
@@ -102,10 +97,10 @@ export default {
       <div class="newsletter">
         <h2>Sing up to our Newsletter</h2>
         <form action="">
-          <input type="email" id="email" name="email"  required>
-          <button type="submit" >SUBSCRIBE</button>
-      </form>
-      <p>(we do not share data whit anybody, and only use it for intended purpuse)</p>
+          <input type="email" id="email" name="email" required>
+          <button type="submit">SUBSCRIBE</button>
+        </form>
+        <p>(we do not share data whit anybody, and only use it for intended purpuse)</p>
       </div>
     </div>
   </div>

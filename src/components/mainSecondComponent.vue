@@ -7,99 +7,108 @@ export default {
       store
     };
   },
-  
-  };
+};
 </script>
 
 <template>
   <div class="big-container">
-<div class="start-learning horizzontal">
-  <div >
-    <h2>
-      Start Learning to Drive Today
-    </h2>
-    <h6>Give us a call to schedule your first driving lesson </h6>
-  </div>
-  <div><p ><i class="fa-solid fa-phone-flip"></i>  <span class="phone">1-800-555-555</span></p></div>
-</div>
-<div class="invisible-backgorund">
-  <img src="../assets/img/promise-background.jpg" alt="" >
-  <img src="../assets/img/latestnews-bottom-800x70.png" alt=""  class="triangle">
-</div>
-<div class="course-container">
-  <div class="courses">
-    <div class="corner">
-      <span class="text">NEW</span>
+    <div class="start-learning horizzontal">
+      <div>
+        <h2>
+          Start Learning to Drive Today
+        </h2>
+        <h6>Give us a call to schedule your first driving lesson</h6>
+      </div>
+      <div>
+        <p><i class="fa-solid fa-phone-flip"></i> <span class="phone">1-800-555-555</span></p>
+      </div>
     </div>
-      <h2>Courses</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elitesentium voluptatum iusto voluptatem fugit, quas illum. Ratione q</p>
-      <button>COURSE INFORMATION</button>
+    <div class="invisible-backgorund">
+      <img src="../assets/img/promise-background.jpg" alt="">
+      <img src="../assets/img/latestnews-bottom-800x70.png" alt="" class="triangle">
     </div>
-    <div class="type-course">
-      <div><img src="../assets/img/courses-passplus-200x200.jpg" alt="">
-      <h5>Pass Plus</h5>
-      <button class="learn-more-button">LEARN MORE</button>
+    <div class="course-container">
+      <div class="courses">
+        <div class="corner">
+          <span class="text">NEW</span>
+        </div>
+        <h2>Courses</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sentium voluptatum iusto voluptatem fugit, quas illum. Ratione q</p>
+        <button>COURSE INFORMATION</button>
+      </div>
+      <div class="type-course">
+        <div>
+          <img src="../assets/img/courses-passplus-200x200.jpg" alt="">
+          <h5>Pass Plus</h5>
+          <button class="learn-more-button">LEARN MORE</button>
+        </div>
+        <div>
+          <img src="../assets/img/course-intensive-200x200.jpg" alt="">
+          <h5>Intensive Course</h5>
+          <button class="learn-more-button">LEARN MORE</button>
+        </div>
+        <div>
+          <img src="../assets/img/courses-instructor-200x200.jpg" alt="">
+          <h5>Instructor</h5>
+          <button class="learn-more-button">LEARN MORE</button>
+        </div>
+      </div>
     </div>
-      <div><img src="../assets/img/course-intensive-200x200.jpg" alt="">
-      <h5>Intensive Course</h5>
-      <button class="learn-more-button">LEARN MORE</button>
-    </div>
-      <div><img src="../assets/img/courses-instructor-200x200.jpg" alt="">
-      <h5>Instructor</h5>
-      <button class="learn-more-button">LEARN MORE</button>
-    </div>
-    </div>
-  </div>
-  <!-- zona dati -->
-  <div class="data-container">
-    <div class="rate-container">
-      <div class="hidden"><div class="grey-ball"></div></div>
-      <div class="radius-95">
-        
-        <h2>95%</h2></div>
-      <h4>PASS RATE</h4>
-    </div>
-    <div class="rate-container">
-      <div class="radius-100"><h2>100%</h2></div>
-      <h4>REFERRAL RATE</h4>
-    </div>
-    <div class="rate-container">
-      <div class="radius-0">
-        <div class="green-ball"></div>
-        <h2>0%</h2></div>
-      <h4>ACCIDENT RATE</h4>
-    </div>
-  </div>
-
-  <!-- istructors -->
-  <div class="instructor-container">
-    <h3>Your Instructor</h3>
-    <div class="instructor-info">
-      <p>Lorem, ipsum sit amet consectetur adipisicing elit. Deserunt fugit ratione blanditiis quibusdam neque aspernatur eaque molestias, atque a illum.</p>
-      <button>MORE ABOUT US</button>
-    </div>
+    <!-- zona dati -->
     <div class="data-container">
-      <div class="info-instructor-container">
-        <div><img src="../assets/img/instructor-mikehart-400x254.jpg" alt=""></div>
-        <h5>Mike Hart</h5>
-        <p><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-instagram"></i><br>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, inventore?</p>
+      <div class="rate-container">
+        <div class="hidden">
+          <div class="grey-ball"></div>
+        </div>
+        <div class="radius-95">
+          <h2>95%</h2>
+        </div>
+        <h4>PASS RATE</h4>
       </div>
-      <div class="info-instructor-container bigger">
-        <div><img src="../assets/img/instructor-johnsmith-400x254.jpg" alt=""></div>
-        <h5>John Smith</h5>
-        <p><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-instagram"></i><br>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, inventore?</p>
+      <div class="rate-container">
+        <div class="radius-100">
+          <h2>100%</h2>
+        </div>
+        <h4>REFERRAL RATE</h4>
       </div>
-      <div class="info-instructor-container">
-        <div><img src="../assets/img/instructor-angelahart-400x254.jpg" alt=""></div>
-        <h5>Angela Hart</h5>
-        <p><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-instagram"></i><br>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, inventore?</p>
+      <div class="rate-container">
+        <div class="radius-0">
+          <div class="green-ball"></div>
+          <h2>0%</h2>
+        </div>
+        <h4>ACCIDENT RATE</h4>
+      </div>
+    </div>
+
+    <!-- istructors -->
+    <div class="instructor-container">
+      <h3>Your Instructor</h3>
+      <div class="instructor-info">
+        <p>Lorem, ipsum sit amet consectetur adipisicing elit. Deserunt fugit ratione blanditiis quibusdam neque aspernatur eaque molestias, atque a illum.</p>
+        <button>MORE ABOUT US</button>
+      </div>
+      <div class="data-container">
+        <div class="info-instructor-container">
+          <div><img src="../assets/img/instructor-mikehart-400x254.jpg" alt=""></div>
+          <h5>Mike Hart</h5>
+          <p><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-instagram"></i><br>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, inventore?</p>
+        </div>
+        <div class="info-instructor-container bigger">
+          <div><img src="../assets/img/instructor-johnsmith-400x254.jpg" alt=""></div>
+          <h5>John Smith</h5>
+          <p><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-instagram"></i><br>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, inventore?</p>
+        </div>
+        <div class="info-instructor-container">
+          <div><img src="../assets/img/instructor-angelahart-400x254.jpg" alt=""></div>
+          <h5>Angela Hart</h5>
+          <p><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-instagram"></i><br>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, inventore?</p>
+        </div>
       </div>
     </div>
   </div>
-</div>
 </template>
 
 <style lang="scss" scoped>
