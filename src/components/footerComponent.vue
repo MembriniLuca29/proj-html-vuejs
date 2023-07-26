@@ -85,12 +85,18 @@ export default {
     .green-text{
       color: #7ABC64;
     }
+    .green-text:hover{
+      cursor: pointer;
+      color: white;
+    }
    
     .grid-img{
       height: 300px;
-      width: 100%;
-      background-image: url(../assets/img/footer-ad-grid.png);
-      
+      width: 0%;
+      img{
+        height: 300px;
+        
+      }
     }
     button{
       height: 50px;
@@ -100,6 +106,7 @@ export default {
         color: white;
         border: 5px solid transparent;
         font-weight: bolder;
+        margin: 80px 100px 0px 80px;
       }
       button:hover{
         background-color: white;

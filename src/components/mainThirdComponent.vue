@@ -6,43 +6,43 @@ export default {
     return {
       store,
 
-      sophia :
+      testimonials :[
         {
-          name:'Sophia Jones' ,
-          image:'@/assets/img/testimonial-sophia.png',
+          "name":'Sophia Jones' ,
+          "image":'../assets/img/courses-instructor-200x200.jpg',
         },
-      grant:
+
         {
-          name:'grant' ,
-          image:'@/assets/img/testimonial-grant.png' ,
+          "name":'grant' ,
+          "image":'../assets/img/testimonial-grant.png' ,
         },
-      harold:
+   
         {
-          name: 'harold',
-          image: '@/assets/img/testimonial-harold.png',
+          "name": 'harold',
+          "image": '../assets/img/testimonial-harold.png',
         },
-      kate:
+     
         {
-          name: 'kate',
-          image: '@/assets/img/testimonial-kate.png',
+          "name": 'kate',
+          "image": '../assets/img/testimonial-kate.png',
         },
-      kelly:
-        {
-          name: 'kelly',
-          image: '@/assets/img/testimonial-kelly.png',
+       {
+          "name": 'kelly',
+          "image": '../assets/img/testimonial-kelly.png',
         },
-        selectedTestimonial: null
+      ],
+      selectedTestimonial: null,
+    selectedTestimonialIndex: null,
     };
+    
   },
   methods: {
-    selectTestimonial(testimonial) {
-      this.selectedTestimonial = testimonial;
-      console.log(this.grant)
-    }
+  changeTestimonial(index) {
+    this.selectedTestimonial = this.testimonials[index];
+    this.selectedTestimonialIndex = index;
   },
-  mounted() {
-    this.selectedTestimonial = this.sophia;
-  }
+},
+
 };
 </script>
 
@@ -52,16 +52,13 @@ export default {
       <div class="testimonials-container">
         <h3>Tesrimonials</h3>
         <p>Here's what our happy drivers had to say about our services:</p>
-        <img v-if="selectedTestimonial" :src="selectedTestimonial.image" alt="">
+        <img v-if="selectedTestimonial" :src="selectedTestimonial.image" :alt="selectedTestimonial.name">
         <p>Avada Driving School really helped build my confidence behind the wheel and driving in general, and they got me a first time pass! <br>
         Highly recommended.</p>
         <h5 v-if="selectedTestimonial">{{ selectedTestimonial.name }}</h5>
         <div class="button-carousel">
-          <button @click="selectTestimonial(sophia)"></button>
-          <button @click="selectTestimonial(grant)"></button>
-          <button @click="selectTestimonial(harold)"></button>
-          <button @click="selectTestimonial(kate)"></button>
-          <button @click="selectTestimonial(kelly)"></button>
+          <button v-for="(testimonial, index) in testimonials" :key="index" @click="changeTestimonial(index)"></button>
+        
         </div>
       </div>
     </div>
@@ -94,7 +91,7 @@ export default {
       <div class="newsletter">
         <h2>Sing up to our Newsletter</h2>
         <form action="">
-          <input type="email">
+          <input type="email" id="email" name="email"  required>
           <button type="submit" >SUBSCRIBE</button>
       </form>
       <p>(we do not share data whit anybody, and only use it for intended purpuse)</p>
@@ -203,11 +200,17 @@ export default {
       .green-text{
         color: #7ABC64;
       }
+      .green-text:hover{
+        cursor: pointer;
+      }
       h5{
         font-size: 1.4rem;
         margin: 10px 0 -10px 0;
       }
-   
+      h5:hover{
+        cursor: pointer;
+        text-decoration: underline;
+      }
       .news{
         display: flex;
         justify-content: center;

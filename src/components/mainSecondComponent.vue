@@ -183,6 +183,7 @@ export default {
       border-width: 0px 80px 80px 0px;
       border-color: transparent #7ABC64  transparent #7ABC64;
 
+     
       .text {
         color: white;
         font-weight: bold;
@@ -192,6 +193,10 @@ export default {
         left: 35px;
       }
     }
+    .corner:hover{
+        border-color: transparent black  transparent black;
+        cursor: pointer;
+      }
     h2{
       font-size: 2.5rem;
       padding-top: 15px;
@@ -388,6 +393,11 @@ export default {
     p{
       color: #929AA3;
     }
+  }
+  .info-instructor-container:hover{
+    transform: scale(120%);
+    transition: 1s ease-in-out;
+    z-index: 4;
   }
   .bigger{
     width: 28%;
