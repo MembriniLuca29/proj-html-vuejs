@@ -5,30 +5,31 @@ export default {
   data() {
     return {
       store,
+      baseUrl: './assets/img/',
 
       testimonials :[
         {
           "name":'Sophia Jones' ,
-          "image":'../assets/img/courses-instructor-200x200.jpg',
+          "image":'courses-instructor-200x200.jpg',
         },
 
         {
           "name":'grant' ,
-          "image":'../assets/img/testimonial-grant.png' ,
+          "image":'testimonial-grant.png' ,
         },
    
         {
           "name": 'harold',
-          "image": '../assets/img/testimonial-harold.png',
+          "image": 'testimonial-harold.png',
         },
      
         {
           "name": 'kate',
-          "image": '../assets/img/testimonial-kate.png',
+          "image": 'testimonial-kate.png',
         },
        {
           "name": 'kelly',
-          "image": '../assets/img/testimonial-kelly.png',
+          "image": 'testimonial-kelly.png',
         },
         ],
       selectedTestimonial: null,
@@ -40,18 +41,29 @@ export default {
       this.selectedTestimonial = this.testimonials[index];
       this.selectedTestimonialIndex = index;
     },
+    
+ 
+  },
+  mounted() {
+    // Set the initial selected testimonial to Sophia (index 0)
+    this.selectedTestimonial = this.testimonials[0];
+    this.selectedTestimonialIndex = 0;
   },
 };
 </script>
 
 <template>
  <div class="third-container">
-    <div class="testimonials-background-container">
+  <div class="testimonials-background-container">
       <div class="testimonials-container">
         <h3>Tesrimonials</h3>
         <p>Here's what our happy drivers had to say about our services:</p>
-        <img v-if="selectedTestimonial" src="../assets/img/testimonial-sophia.png" :alt="selectedTestimonial.name">
-        <!-- <img v-if="selectedTestimonial" :src="selectedTestimonial.image" :alt="selectedTestimonial.name"> -->
+        <img
+          v-if="selectedTestimonial"
+          src="./img/testimonial-sophia.png"
+          :alt="selectedTestimonial.name"
+        />
+        <!-- :src="`${baseUrl}${selectedTestimonial.image}`" -->
         <p>Avada Driving School really helped build my confidence behind the wheel and driving in general, and they got me a first time pass! <br>
         Highly recommended.</p>
         <h5 v-if="selectedTestimonial">{{ selectedTestimonial.name }}</h5>
