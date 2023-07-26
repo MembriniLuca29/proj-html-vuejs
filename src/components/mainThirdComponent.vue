@@ -229,7 +229,7 @@ export default {
       .triangles{
         width: 100%;
         position: relative;
-        top: 102px;
+        top: 100px;
       }
     }
   }
