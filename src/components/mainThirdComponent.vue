@@ -39,7 +39,6 @@ export default {
     },
   },
   mounted() {
-    // Set the initial selected testimonial to Sophia (index 0)
     this.selectedTestimonial = this.testimonials[0];
     this.selectedTestimonialIndex = 0;
   },
