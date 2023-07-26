@@ -38,7 +38,7 @@ export default {
         <h3 class="green-text"><i class="fa-solid fa-circle-arrow-right green-text"></i> Instructor Training</h3>
       </div>
     </div>
-    <div class="section-footer">
+    <div class="section-footer flex">
       <div class="grid-img"><img  src="../assets/img/footer-ad-grid-400x357.png" alt=""></div>
       <button>BOOK NOW</button>
     </div>
@@ -64,6 +64,12 @@ export default {
   .lower{
     margin-top: 40px;
     
+  }
+
+  .flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .section-footer{
     width: calc(100% / 4);
@@ -91,10 +97,9 @@ export default {
     }
    
     .grid-img{
-      height: 300px;
-      width: 0%;
+      height: 260px;
       img{
-        height: 300px;
+        height: 240px;
         
       }
     }
@@ -106,7 +111,7 @@ export default {
         color: white;
         border: 5px solid transparent;
         font-weight: bolder;
-        margin: 80px 100px 0px 80px;
+        margin-top: 70px;
       }
       button:hover{
         background-color: white;

@@ -30,19 +30,17 @@ export default {
           "name": 'kelly',
           "image": '../assets/img/testimonial-kelly.png',
         },
-      ],
+        ],
       selectedTestimonial: null,
-    selectedTestimonialIndex: null,
+      selectedTestimonialIndex: null,
     };
-    
   },
   methods: {
-  changeTestimonial(index) {
-    this.selectedTestimonial = this.testimonials[index];
-    this.selectedTestimonialIndex = index;
+    changeTestimonial(index) {
+      this.selectedTestimonial = this.testimonials[index];
+      this.selectedTestimonialIndex = index;
+    },
   },
-},
-
 };
 </script>
 
@@ -52,7 +50,8 @@ export default {
       <div class="testimonials-container">
         <h3>Tesrimonials</h3>
         <p>Here's what our happy drivers had to say about our services:</p>
-        <img v-if="selectedTestimonial" :src="selectedTestimonial.image" :alt="selectedTestimonial.name">
+        <img v-if="selectedTestimonial" src="../assets/img/testimonial-sophia.png" :alt="selectedTestimonial.name">
+        <!-- <img v-if="selectedTestimonial" :src="selectedTestimonial.image" :alt="selectedTestimonial.name"> -->
         <p>Avada Driving School really helped build my confidence behind the wheel and driving in general, and they got me a first time pass! <br>
         Highly recommended.</p>
         <h5 v-if="selectedTestimonial">{{ selectedTestimonial.name }}</h5>
@@ -124,8 +123,6 @@ export default {
     }
     img{
       border-radius: 50%;
-      height: 200px;
-      width: 200px;
       margin-bottom: 30px;
     }
     h5{
